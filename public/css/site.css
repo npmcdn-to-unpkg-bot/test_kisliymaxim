@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    display: block;
+    padding: 60px;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+#chart{
+    width: 600px;
+    height: 400px;
+    margin: 15px auto 0;
+}
+.title {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+#overlay {
+    background: url("../images/overlay.png") 0 0 repeat;
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.loader-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+}
+.ball-chasing .loader {
+    width: 100px;
+    height: 100px;
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+}
+.ball-chasing .loader .ball-1, .ball-chasing .loader .ball-2 {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-animation: chasingBallBounce 2s linear infinite;
+    animation: chasingBallBounce 2s linear infinite;
+}
+.ball-chasing .loader .ball-2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes chasingBallBounce {
+    50% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+@keyframes chasingBallBounce {
+    50% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
