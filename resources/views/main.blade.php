@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="{{ URL::asset('css/site.css')}}">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
-        <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
-        <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+        <script src="https://unpkg.com/react@15.3.1/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15.3.1/dist/react-dom.js"></script>
+        <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
 
     </head>
     <body>
